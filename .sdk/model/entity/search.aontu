@@ -1,0 +1,560 @@
+# Entity: search
+
+main: kit: entity: search: {
+
+  alias: field: {}
+
+  fields: {
+    about_this_domain: {
+      h: "About This Domain"
+      n: "about_this_domain"
+      r: false
+      sh: "Inline 'About this domain' card shown for entity-style queries, with a brief overview and reference links to sources."
+      t: "`$OBJECT`"
+    }
+    about_this_result: {
+      h: "About This Result"
+      n: "about_this_result"
+      r: false
+      sh: "About this result information"
+      t: "`$ARRAY`"
+    }
+    ad_related_searches: {
+      h: "Ad Related Searches"
+      n: "ad_related_searches"
+      r: false
+      t: "`$ARRAY`"
+    }
+    ads: {
+      h: "Ads"
+      n: "ads"
+      r: false
+      t: "`$ARRAY`"
+      union: {
+        branches: 2
+        count: 1
+        depth: 7
+      }
+    }
+    ai_overview: {
+      h: "Ai Overview"
+      n: "ai_overview"
+      r: false
+      t: "`$OBJECT`"
+    }
+    answer_box: {
+      h: "Answer Box"
+      n: "answer_box"
+      r: false
+      t: "`$ANY`"
+    }
+    courses: {
+      h: "Courses"
+      n: "courses"
+      r: false
+      t: "`$ARRAY`"
+    }
+    discussions_and_forums: {
+      h: "Discussions And Forums"
+      n: "discussions_and_forums"
+      r: false
+      t: "`$ARRAY`"
+    }
+    dmca_messages: {
+      h: "Dmca Messages"
+      n: "dmca_messages"
+      r: false
+      t: "`$OBJECT`"
+    }
+    error: {
+      h: "Error"
+      n: "error"
+      r: false
+      sh: "Error message when the page has no results, e.g."
+      t: "`$STRING`"
+    }
+    events: {
+      h: "Events"
+      n: "events"
+      r: false
+      t: "`$ARRAY`"
+      union: {
+        branches: 2
+        count: 1
+        depth: 3
+      }
+    }
+    explore_brands: {
+      h: "Explore Brands"
+      n: "explore_brands"
+      r: false
+      t: "`$ARRAY`"
+    }
+    from_sources_across_the_web: {
+      h: "From Sources Across The Web"
+      n: "from_sources_across_the_web"
+      r: false
+      t: "`$OBJECT`"
+    }
+    inline_images: {
+      h: "Inline Images"
+      n: "inline_images"
+      r: false
+      t: "`$OBJECT`"
+    }
+    inline_recipes: {
+      h: "Inline Recipes"
+      n: "inline_recipes"
+      r: false
+      t: "`$ARRAY`"
+    }
+    inline_shopping: {
+      h: "Inline Shopping"
+      n: "inline_shopping"
+      r: false
+      t: "`$ARRAY`"
+    }
+    inline_shorts: {
+      h: "Inline Shorts"
+      n: "inline_shorts"
+      r: false
+      sh: "Array of inline short video results"
+      t: "`$ARRAY`"
+    }
+    inline_tweets: {
+      h: "Inline Tweets"
+      n: "inline_tweets"
+      r: false
+      t: "`$OBJECT`"
+    }
+    inline_videos: {
+      h: "Inline Videos"
+      n: "inline_videos"
+      r: false
+      sh: "Array of inline video results"
+      t: "`$ARRAY`"
+    }
+    jobs: {
+      h: "Jobs"
+      n: "jobs"
+      r: false
+      t: "`$ARRAY`"
+    }
+    knowledge_graph: {
+      h: "Knowledge Graph"
+      n: "knowledge_graph"
+      r: false
+      t: "`$OBJECT`"
+    }
+    latest_posts: {
+      h: "Latest Posts"
+      n: "latest_posts"
+      r: false
+      t: "`$ARRAY`"
+    }
+    local_ads: {
+      h: "Local Ads"
+      n: "local_ads"
+      r: false
+      t: "`$OBJECT`"
+    }
+    local_map: {
+      h: "Local Map"
+      n: "local_map"
+      r: false
+      t: "`$OBJECT`"
+    }
+    local_news: {
+      h: "Local News"
+      n: "local_news"
+      r: false
+      t: "`$ARRAY`"
+    }
+    local_results: {
+      h: "Local Results"
+      n: "local_results"
+      r: false
+      t: "`$ARRAY`"
+      union: {
+        branches: 2
+        count: 1
+        depth: 3
+      }
+    }
+    nearby_events: {
+      h: "Nearby Events"
+      n: "nearby_events"
+      r: false
+      t: "`$ARRAY`"
+    }
+    organic_results: {
+      h: "Organic Results"
+      n: "organic_results"
+      r: false
+      t: "`$ARRAY`"
+    }
+    pagination: {
+      h: "Pagination"
+      n: "pagination"
+      r: false
+      t: "`$OBJECT`"
+    }
+    perspectives: {
+      h: "Perspectives"
+      n: "perspectives"
+      r: false
+      t: "`$ARRAY`"
+    }
+    popular_destinations: {
+      h: "Popular Destinations"
+      n: "popular_destinations"
+      r: false
+      t: "`$ARRAY`"
+    }
+    questions_and_answers: {
+      h: "Questions And Answers"
+      n: "questions_and_answers"
+      r: false
+      t: "`$ARRAY`"
+    }
+    related_questions: {
+      h: "Related Questions"
+      n: "related_questions"
+      r: false
+      t: "`$ARRAY`"
+      union: {
+        branches: 2
+        count: 1
+        depth: 4
+      }
+    }
+    related_searches: {
+      h: "Related Searches"
+      n: "related_searches"
+      r: false
+      t: "`$ARRAY`"
+    }
+    salary_estimates: {
+      h: "Salary Estimates"
+      n: "salary_estimates"
+      r: false
+      t: "`$ARRAY`"
+    }
+    scholarly_articles: {
+      h: "Scholarly Articles"
+      n: "scholarly_articles"
+      r: false
+      t: "`$OBJECT`"
+    }
+    search_information: {
+      h: "Search Information"
+      n: "search_information"
+      r: false
+      t: "`$OBJECT`"
+    }
+    search_metadata: {
+      h: "Search Metadata"
+      n: "search_metadata"
+      r: true
+      t: "`$OBJECT`"
+    }
+    search_parameters: {
+      h: "Search Parameters"
+      n: "search_parameters"
+      r: false
+      t: "`$OBJECT`"
+    }
+    shopping_ads: {
+      h: "Shopping Ads"
+      n: "shopping_ads"
+      r: false
+      t: "`$ARRAY`"
+    }
+    showtimes: {
+      h: "Showtimes"
+      n: "showtimes"
+      r: false
+      t: "`$ARRAY`"
+    }
+    sponsored_tickets: {
+      h: "Sponsored Tickets"
+      n: "sponsored_tickets"
+      r: false
+      sh: "Sponsored tickets and tours results"
+      t: "`$ARRAY`"
+    }
+    sports_results: {
+      h: "Sports Results"
+      n: "sports_results"
+      r: false
+      t: "`$ANY`"
+      union: {
+        branches: 2
+        count: 1
+        depth: 7
+      }
+    }
+    things_to_do: {
+      h: "Things To Do"
+      n: "things_to_do"
+      r: false
+      t: "`$ARRAY`"
+    }
+    top_stories: {
+      h: "Top Stories"
+      n: "top_stories"
+      r: false
+      t: "`$ARRAY`"
+    }
+    train_results: {
+      h: "Train Results"
+      n: "train_results"
+      r: false
+      sh: "Train itinerary widget for route queries."
+      t: "`$OBJECT`"
+    }
+    universities: {
+      h: "Universities"
+      n: "universities"
+      r: false
+      t: "`$ARRAY`"
+    }
+    weather_result: {
+      h: "Weather Result"
+      n: "weather_result"
+      r: false
+      t: "`$ANY`"
+    }
+  }
+
+  name: "search"
+  op: {
+    list: {
+      name: "list"
+      points: [
+        {
+          co: {
+            id: "GET /search"
+            source: "openapi3"
+            version: 2
+          }
+          g: {
+            query: [
+              {
+                k: "query"
+                n: "api_key"
+                or: "api_key"
+                r: true
+                t: "`$STRING`"
+              }
+              {
+                k: "query"
+                n: "cr"
+                or: "cr"
+                r: false
+                t: "`$STRING`"
+              }
+              {
+                ex: "desktop"
+                k: "query"
+                n: "device"
+                or: "device"
+                r: false
+                t: "`$STRING`"
+              }
+              {
+                k: "query"
+                n: "engine"
+                or: "engine"
+                r: true
+                t: "`$STRING`"
+              }
+              {
+                ex: "1"
+                k: "query"
+                n: "filter"
+                or: "filter"
+                r: false
+                t: "`$STRING`"
+              }
+              {
+                k: "query"
+                n: "gl"
+                or: "gl"
+                r: false
+                t: "`$STRING`"
+              }
+              {
+                ex: "en"
+                k: "query"
+                n: "hl"
+                or: "hl"
+                r: false
+                t: "`$STRING`"
+              }
+              {
+                k: "query"
+                n: "kgmid"
+                or: "kgmid"
+                r: false
+                t: "`$STRING`"
+              }
+              {
+                k: "query"
+                n: "latitude"
+                or: "latitude"
+                r: false
+                t: "`$NUMBER`"
+              }
+              {
+                ex: "raw"
+                k: "query"
+                n: "link"
+                or: "link"
+                r: false
+                t: "`$STRING`"
+              }
+              {
+                k: "query"
+                n: "location"
+                or: "location"
+                r: false
+                t: "`$STRING`"
+              }
+              {
+                k: "query"
+                n: "longitude"
+                or: "longitude"
+                r: false
+                t: "`$NUMBER`"
+              }
+              {
+                ex: "lang_en|lang_de"
+                k: "query"
+                n: "lr"
+                or: "lr"
+                r: false
+                t: "`$STRING`"
+              }
+              {
+                ex: "0"
+                k: "query"
+                n: "nfpr"
+                or: "nfpr"
+                r: false
+                t: "`$STRING`"
+              }
+              {
+                ex: "performance"
+                k: "query"
+                n: "optimization_strategy"
+                or: "optimization_strategy"
+                r: false
+                t: "`$STRING`"
+              }
+              {
+                ex: 1
+                k: "query"
+                n: "page"
+                or: "page"
+                r: false
+                t: "`$INTEGER`"
+              }
+              {
+                k: "query"
+                n: "q"
+                or: "q"
+                r: false
+                t: "`$STRING`"
+              }
+              {
+                ex: "blur"
+                k: "query"
+                n: "safe"
+                or: "safe"
+                r: false
+                t: "`$STRING`"
+              }
+              {
+                k: "query"
+                n: "time_period"
+                or: "time_period"
+                r: false
+                t: "`$STRING`"
+              }
+              {
+                k: "query"
+                n: "time_period_max"
+                or: "time_period_max"
+                r: false
+                t: "`$STRING`"
+              }
+              {
+                k: "query"
+                n: "time_period_min"
+                or: "time_period_min"
+                r: false
+                t: "`$STRING`"
+              }
+              {
+                k: "query"
+                n: "uule"
+                or: "uule"
+                r: false
+                t: "`$STRING`"
+              }
+              {
+                k: "query"
+                n: "verbatim"
+                or: "verbatim"
+                r: false
+                t: "`$STRING`"
+              }
+            ]
+          }
+          m: "GET"
+          o: "/search"
+          q: {
+            exist: [
+              "api_key"
+              "cr"
+              "device"
+              "engine"
+              "filter"
+              "gl"
+              "hl"
+              "kgmid"
+              "latitude"
+              "link"
+              "location"
+              "longitude"
+              "lr"
+              "nfpr"
+              "optimization_strategy"
+              "page"
+              "q"
+              "safe"
+              "time_period"
+              "time_period_max"
+              "time_period_min"
+              "uule"
+              "verbatim"
+            ]
+          }
+          s: [
+            {
+              lit: "search"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+      ]
+    }
+  }
+
+
+
+}

@@ -1,0 +1,1014 @@
+{
+  "def": "searchapi-google-openapi3.yml",
+  "main": {
+    "def": {
+      "desc": ""
+    },
+    "kit": {
+      "author": {
+        "name": "",
+        "url": ""
+      },
+      "config": {
+        "docs_order": [
+          "ts",
+          "py",
+          "php",
+          "go",
+          "rb",
+          "lua"
+        ],
+        "headers": {
+          "content-type": "application/json"
+        },
+        "repr": "auto"
+      },
+      "contributor": {},
+      "doc": {
+        "active": true,
+        "assets": {
+          "path": ".sdk/doc/assets"
+        },
+        "brand": {
+          "label": "",
+          "notice": "",
+          "shortNotice": "",
+          "url": ""
+        },
+        "ci": {
+          "active": true,
+          "branch": "main"
+        },
+        "content": {
+          "path": ".sdk/doc/content"
+        },
+        "edition": {
+          "github-pages": {
+            "active": false,
+            "base": "node_modules/@voxgig/docgen/project/.sdk",
+            "brand": {},
+            "filter": {
+              "entities": [],
+              "features": [],
+              "targets": []
+            },
+            "kind": "github-pages",
+            "name": "github-pages",
+            "origname": "",
+            "output": {
+              "path": "docs"
+            },
+            "package": "@voxgig/docgen",
+            "published": false,
+            "site": {
+              "active": true
+            },
+            "style": {},
+            "title": ""
+          },
+          "summary": {
+            "active": true,
+            "base": "node_modules/@voxgig/docgen/project/.sdk",
+            "brand": {},
+            "filter": {
+              "entities": [],
+              "features": [],
+              "targets": []
+            },
+            "kind": "summary",
+            "name": "summary",
+            "origname": "",
+            "output": {
+              "path": "SUMMARY.md"
+            },
+            "package": "@voxgig/docgen",
+            "published": false,
+            "site": {
+              "active": true
+            },
+            "style": {},
+            "title": ""
+          }
+        },
+        "qa": {
+          "vocabulary": []
+        },
+        "style": {
+          "color": {
+            "accent": "#00c6d8",
+            "background": "#f5f5f9",
+            "darkBackground": "#0f1117",
+            "darkText": "#e6edf3",
+            "primary": "#e70042",
+            "text": "#0a0a0a"
+          },
+          "font": "Nunito, system-ui, sans-serif",
+          "fontFile": "",
+          "headingFont": "Nunito, system-ui, sans-serif",
+          "headingFontFile": "",
+          "logo": "",
+          "mode": "light",
+          "mono": "ui-monospace, monospace",
+          "monoFile": ""
+        },
+        "target": {}
+      },
+      "entity": {
+        "search": {
+          "active": true,
+          "alias": {
+            "field": {}
+          },
+          "fields": {
+            "about_this_domain": {
+              "a": true,
+              "h": "About This Domain",
+              "n": "about_this_domain",
+              "r": false,
+              "sh": "Inline 'About this domain' card shown for entity-style queries, with a brief overview and reference links to sources.",
+              "t": "`$OBJECT`"
+            },
+            "about_this_result": {
+              "a": true,
+              "h": "About This Result",
+              "n": "about_this_result",
+              "r": false,
+              "sh": "About this result information",
+              "t": "`$ARRAY`"
+            },
+            "ad_related_searches": {
+              "a": true,
+              "h": "Ad Related Searches",
+              "n": "ad_related_searches",
+              "r": false,
+              "t": "`$ARRAY`"
+            },
+            "ads": {
+              "a": true,
+              "h": "Ads",
+              "n": "ads",
+              "r": false,
+              "t": "`$ARRAY`",
+              "union": {
+                "branches": 2,
+                "count": 1,
+                "depth": 7
+              }
+            },
+            "ai_overview": {
+              "a": true,
+              "h": "Ai Overview",
+              "n": "ai_overview",
+              "r": false,
+              "t": "`$OBJECT`"
+            },
+            "answer_box": {
+              "a": true,
+              "h": "Answer Box",
+              "n": "answer_box",
+              "r": false,
+              "t": "`$ANY`"
+            },
+            "courses": {
+              "a": true,
+              "h": "Courses",
+              "n": "courses",
+              "r": false,
+              "t": "`$ARRAY`"
+            },
+            "discussions_and_forums": {
+              "a": true,
+              "h": "Discussions And Forums",
+              "n": "discussions_and_forums",
+              "r": false,
+              "t": "`$ARRAY`"
+            },
+            "dmca_messages": {
+              "a": true,
+              "h": "Dmca Messages",
+              "n": "dmca_messages",
+              "r": false,
+              "t": "`$OBJECT`"
+            },
+            "error": {
+              "a": true,
+              "h": "Error",
+              "n": "error",
+              "r": false,
+              "sh": "Error message when the page has no results, e.g.",
+              "t": "`$STRING`"
+            },
+            "events": {
+              "a": true,
+              "h": "Events",
+              "n": "events",
+              "r": false,
+              "t": "`$ARRAY`",
+              "union": {
+                "branches": 2,
+                "count": 1,
+                "depth": 3
+              }
+            },
+            "explore_brands": {
+              "a": true,
+              "h": "Explore Brands",
+              "n": "explore_brands",
+              "r": false,
+              "t": "`$ARRAY`"
+            },
+            "from_sources_across_the_web": {
+              "a": true,
+              "h": "From Sources Across The Web",
+              "n": "from_sources_across_the_web",
+              "r": false,
+              "t": "`$OBJECT`"
+            },
+            "inline_images": {
+              "a": true,
+              "h": "Inline Images",
+              "n": "inline_images",
+              "r": false,
+              "t": "`$OBJECT`"
+            },
+            "inline_recipes": {
+              "a": true,
+              "h": "Inline Recipes",
+              "n": "inline_recipes",
+              "r": false,
+              "t": "`$ARRAY`"
+            },
+            "inline_shopping": {
+              "a": true,
+              "h": "Inline Shopping",
+              "n": "inline_shopping",
+              "r": false,
+              "t": "`$ARRAY`"
+            },
+            "inline_shorts": {
+              "a": true,
+              "h": "Inline Shorts",
+              "n": "inline_shorts",
+              "r": false,
+              "sh": "Array of inline short video results",
+              "t": "`$ARRAY`"
+            },
+            "inline_tweets": {
+              "a": true,
+              "h": "Inline Tweets",
+              "n": "inline_tweets",
+              "r": false,
+              "t": "`$OBJECT`"
+            },
+            "inline_videos": {
+              "a": true,
+              "h": "Inline Videos",
+              "n": "inline_videos",
+              "r": false,
+              "sh": "Array of inline video results",
+              "t": "`$ARRAY`"
+            },
+            "jobs": {
+              "a": true,
+              "h": "Jobs",
+              "n": "jobs",
+              "r": false,
+              "t": "`$ARRAY`"
+            },
+            "knowledge_graph": {
+              "a": true,
+              "h": "Knowledge Graph",
+              "n": "knowledge_graph",
+              "r": false,
+              "t": "`$OBJECT`"
+            },
+            "latest_posts": {
+              "a": true,
+              "h": "Latest Posts",
+              "n": "latest_posts",
+              "r": false,
+              "t": "`$ARRAY`"
+            },
+            "local_ads": {
+              "a": true,
+              "h": "Local Ads",
+              "n": "local_ads",
+              "r": false,
+              "t": "`$OBJECT`"
+            },
+            "local_map": {
+              "a": true,
+              "h": "Local Map",
+              "n": "local_map",
+              "r": false,
+              "t": "`$OBJECT`"
+            },
+            "local_news": {
+              "a": true,
+              "h": "Local News",
+              "n": "local_news",
+              "r": false,
+              "t": "`$ARRAY`"
+            },
+            "local_results": {
+              "a": true,
+              "h": "Local Results",
+              "n": "local_results",
+              "r": false,
+              "t": "`$ARRAY`",
+              "union": {
+                "branches": 2,
+                "count": 1,
+                "depth": 3
+              }
+            },
+            "nearby_events": {
+              "a": true,
+              "h": "Nearby Events",
+              "n": "nearby_events",
+              "r": false,
+              "t": "`$ARRAY`"
+            },
+            "organic_results": {
+              "a": true,
+              "h": "Organic Results",
+              "n": "organic_results",
+              "r": false,
+              "t": "`$ARRAY`"
+            },
+            "pagination": {
+              "a": true,
+              "h": "Pagination",
+              "n": "pagination",
+              "r": false,
+              "t": "`$OBJECT`"
+            },
+            "perspectives": {
+              "a": true,
+              "h": "Perspectives",
+              "n": "perspectives",
+              "r": false,
+              "t": "`$ARRAY`"
+            },
+            "popular_destinations": {
+              "a": true,
+              "h": "Popular Destinations",
+              "n": "popular_destinations",
+              "r": false,
+              "t": "`$ARRAY`"
+            },
+            "questions_and_answers": {
+              "a": true,
+              "h": "Questions And Answers",
+              "n": "questions_and_answers",
+              "r": false,
+              "t": "`$ARRAY`"
+            },
+            "related_questions": {
+              "a": true,
+              "h": "Related Questions",
+              "n": "related_questions",
+              "r": false,
+              "t": "`$ARRAY`",
+              "union": {
+                "branches": 2,
+                "count": 1,
+                "depth": 4
+              }
+            },
+            "related_searches": {
+              "a": true,
+              "h": "Related Searches",
+              "n": "related_searches",
+              "r": false,
+              "t": "`$ARRAY`"
+            },
+            "salary_estimates": {
+              "a": true,
+              "h": "Salary Estimates",
+              "n": "salary_estimates",
+              "r": false,
+              "t": "`$ARRAY`"
+            },
+            "scholarly_articles": {
+              "a": true,
+              "h": "Scholarly Articles",
+              "n": "scholarly_articles",
+              "r": false,
+              "t": "`$OBJECT`"
+            },
+            "search_information": {
+              "a": true,
+              "h": "Search Information",
+              "n": "search_information",
+              "r": false,
+              "t": "`$OBJECT`"
+            },
+            "search_metadata": {
+              "a": true,
+              "h": "Search Metadata",
+              "n": "search_metadata",
+              "r": true,
+              "t": "`$OBJECT`"
+            },
+            "search_parameters": {
+              "a": true,
+              "h": "Search Parameters",
+              "n": "search_parameters",
+              "r": false,
+              "t": "`$OBJECT`"
+            },
+            "shopping_ads": {
+              "a": true,
+              "h": "Shopping Ads",
+              "n": "shopping_ads",
+              "r": false,
+              "t": "`$ARRAY`"
+            },
+            "showtimes": {
+              "a": true,
+              "h": "Showtimes",
+              "n": "showtimes",
+              "r": false,
+              "t": "`$ARRAY`"
+            },
+            "sponsored_tickets": {
+              "a": true,
+              "h": "Sponsored Tickets",
+              "n": "sponsored_tickets",
+              "r": false,
+              "sh": "Sponsored tickets and tours results",
+              "t": "`$ARRAY`"
+            },
+            "sports_results": {
+              "a": true,
+              "h": "Sports Results",
+              "n": "sports_results",
+              "r": false,
+              "t": "`$ANY`",
+              "union": {
+                "branches": 2,
+                "count": 1,
+                "depth": 7
+              }
+            },
+            "things_to_do": {
+              "a": true,
+              "h": "Things To Do",
+              "n": "things_to_do",
+              "r": false,
+              "t": "`$ARRAY`"
+            },
+            "top_stories": {
+              "a": true,
+              "h": "Top Stories",
+              "n": "top_stories",
+              "r": false,
+              "t": "`$ARRAY`"
+            },
+            "train_results": {
+              "a": true,
+              "h": "Train Results",
+              "n": "train_results",
+              "r": false,
+              "sh": "Train itinerary widget for route queries.",
+              "t": "`$OBJECT`"
+            },
+            "universities": {
+              "a": true,
+              "h": "Universities",
+              "n": "universities",
+              "r": false,
+              "t": "`$ARRAY`"
+            },
+            "weather_result": {
+              "a": true,
+              "h": "Weather Result",
+              "n": "weather_result",
+              "r": false,
+              "t": "`$ANY`"
+            }
+          },
+          "name": "search",
+          "op": {
+            "list": {
+              "input": "data",
+              "name": "list",
+              "points": [
+                {
+                  "a": true,
+                  "co": {
+                    "id": "GET /search",
+                    "source": "openapi3",
+                    "version": 2
+                  },
+                  "g": {
+                    "query": [
+                      {
+                        "a": true,
+                        "k": "query",
+                        "n": "api_key",
+                        "or": "api_key",
+                        "r": true,
+                        "t": "`$STRING`"
+                      },
+                      {
+                        "a": true,
+                        "k": "query",
+                        "n": "cr",
+                        "or": "cr",
+                        "r": false,
+                        "t": "`$STRING`"
+                      },
+                      {
+                        "a": true,
+                        "ex": "desktop",
+                        "k": "query",
+                        "n": "device",
+                        "or": "device",
+                        "r": false,
+                        "t": "`$STRING`"
+                      },
+                      {
+                        "a": true,
+                        "k": "query",
+                        "n": "engine",
+                        "or": "engine",
+                        "r": true,
+                        "t": "`$STRING`"
+                      },
+                      {
+                        "a": true,
+                        "ex": "1",
+                        "k": "query",
+                        "n": "filter",
+                        "or": "filter",
+                        "r": false,
+                        "t": "`$STRING`"
+                      },
+                      {
+                        "a": true,
+                        "k": "query",
+                        "n": "gl",
+                        "or": "gl",
+                        "r": false,
+                        "t": "`$STRING`"
+                      },
+                      {
+                        "a": true,
+                        "ex": "en",
+                        "k": "query",
+                        "n": "hl",
+                        "or": "hl",
+                        "r": false,
+                        "t": "`$STRING`"
+                      },
+                      {
+                        "a": true,
+                        "k": "query",
+                        "n": "kgmid",
+                        "or": "kgmid",
+                        "r": false,
+                        "t": "`$STRING`"
+                      },
+                      {
+                        "a": true,
+                        "k": "query",
+                        "n": "latitude",
+                        "or": "latitude",
+                        "r": false,
+                        "t": "`$NUMBER`"
+                      },
+                      {
+                        "a": true,
+                        "ex": "raw",
+                        "k": "query",
+                        "n": "link",
+                        "or": "link",
+                        "r": false,
+                        "t": "`$STRING`"
+                      },
+                      {
+                        "a": true,
+                        "k": "query",
+                        "n": "location",
+                        "or": "location",
+                        "r": false,
+                        "t": "`$STRING`"
+                      },
+                      {
+                        "a": true,
+                        "k": "query",
+                        "n": "longitude",
+                        "or": "longitude",
+                        "r": false,
+                        "t": "`$NUMBER`"
+                      },
+                      {
+                        "a": true,
+                        "ex": "lang_en|lang_de",
+                        "k": "query",
+                        "n": "lr",
+                        "or": "lr",
+                        "r": false,
+                        "t": "`$STRING`"
+                      },
+                      {
+                        "a": true,
+                        "ex": "0",
+                        "k": "query",
+                        "n": "nfpr",
+                        "or": "nfpr",
+                        "r": false,
+                        "t": "`$STRING`"
+                      },
+                      {
+                        "a": true,
+                        "ex": "performance",
+                        "k": "query",
+                        "n": "optimization_strategy",
+                        "or": "optimization_strategy",
+                        "r": false,
+                        "t": "`$STRING`"
+                      },
+                      {
+                        "a": true,
+                        "ex": 1,
+                        "k": "query",
+                        "n": "page",
+                        "or": "page",
+                        "r": false,
+                        "t": "`$INTEGER`"
+                      },
+                      {
+                        "a": true,
+                        "k": "query",
+                        "n": "q",
+                        "or": "q",
+                        "r": false,
+                        "t": "`$STRING`"
+                      },
+                      {
+                        "a": true,
+                        "ex": "blur",
+                        "k": "query",
+                        "n": "safe",
+                        "or": "safe",
+                        "r": false,
+                        "t": "`$STRING`"
+                      },
+                      {
+                        "a": true,
+                        "k": "query",
+                        "n": "time_period",
+                        "or": "time_period",
+                        "r": false,
+                        "t": "`$STRING`"
+                      },
+                      {
+                        "a": true,
+                        "k": "query",
+                        "n": "time_period_max",
+                        "or": "time_period_max",
+                        "r": false,
+                        "t": "`$STRING`"
+                      },
+                      {
+                        "a": true,
+                        "k": "query",
+                        "n": "time_period_min",
+                        "or": "time_period_min",
+                        "r": false,
+                        "t": "`$STRING`"
+                      },
+                      {
+                        "a": true,
+                        "k": "query",
+                        "n": "uule",
+                        "or": "uule",
+                        "r": false,
+                        "t": "`$STRING`"
+                      },
+                      {
+                        "a": true,
+                        "k": "query",
+                        "n": "verbatim",
+                        "or": "verbatim",
+                        "r": false,
+                        "t": "`$STRING`"
+                      }
+                    ]
+                  },
+                  "k": "http",
+                  "m": "GET",
+                  "o": "/search",
+                  "q": {
+                    "exist": [
+                      "api_key",
+                      "cr",
+                      "device",
+                      "engine",
+                      "filter",
+                      "gl",
+                      "hl",
+                      "kgmid",
+                      "latitude",
+                      "link",
+                      "location",
+                      "longitude",
+                      "lr",
+                      "nfpr",
+                      "optimization_strategy",
+                      "page",
+                      "q",
+                      "safe",
+                      "time_period",
+                      "time_period_max",
+                      "time_period_min",
+                      "uule",
+                      "verbatim"
+                    ]
+                  },
+                  "r": {},
+                  "s": [
+                    {
+                      "lit": "search"
+                    }
+                  ],
+                  "t": {
+                    "req": "`reqdata`",
+                    "res": "`body`"
+                  }
+                }
+              ]
+            }
+          },
+          "relations": {
+            "ancestors": []
+          }
+        }
+      },
+      "feature": {
+        "test": {
+          "active": true,
+          "base": "node_modules/@voxgig/sdkgen/project/.sdk",
+          "config": {
+            "options": {
+              "active": false
+            },
+            "optspec": {
+              "entity": "`$MAP`",
+              "net": "`$MAP`"
+            },
+            "strict": false
+          },
+          "description": "In-memory mock transport for testing without a live server",
+          "hook": {
+            "GetData": {
+              "active": true,
+              "await": false
+            },
+            "GetMatch": {
+              "active": true,
+              "await": false
+            },
+            "PostConstruct": {
+              "active": true,
+              "await": false
+            },
+            "PostConstructEntity": {
+              "active": true,
+              "await": false
+            },
+            "PostOperation": {
+              "active": false,
+              "await": false
+            },
+            "PrePoint": {
+              "active": true,
+              "await": false
+            },
+            "PreRequest": {
+              "active": true,
+              "await": false
+            },
+            "PreResponse": {
+              "active": true,
+              "await": false
+            },
+            "PreResult": {
+              "active": true,
+              "await": false
+            },
+            "PreSpec": {
+              "active": true,
+              "await": false
+            },
+            "PreTarget": {
+              "active": false,
+              "await": false
+            },
+            "SetData": {
+              "active": true,
+              "await": false
+            },
+            "SetMatch": {
+              "active": true,
+              "await": false
+            }
+          },
+          "name": "test",
+          "needs": {},
+          "origname": "",
+          "package": "@voxgig/sdkgen",
+          "plugin": {},
+          "spec": {},
+          "target": {
+            "php": {
+              "deps": {}
+            }
+          },
+          "title": "Test transport",
+          "transport": "base",
+          "version": "0.0.1"
+        }
+      },
+      "flow": {
+        "BasicSearchFlow": {
+          "active": true,
+          "entity": "search",
+          "key$": "BasicSearchFlow",
+          "kind": "basic",
+          "name": "BasicSearchFlow",
+          "param": {},
+          "step": [
+            {
+              "a": true,
+              "d": {},
+              "i": {},
+              "m": {},
+              "o": "list",
+              "s": [],
+              "v": [
+                {
+                  "apply": "ItemExists",
+                  "def": {
+                    "ref": "search_ref01"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "info": {
+        "auth": false,
+        "description": "Google Search API allows you to search the web with Google using various parameters to filter and customize the results.",
+        "servers": [
+          {
+            "url": "https://www.searchapi.io/api/v1"
+          }
+        ],
+        "summary": "Google Search API allows you to search the web with Google using various parameters to filter and customize the results.",
+        "title": "Google Search API",
+        "version": "1.0.0",
+        "website": "https://searchapi.io"
+      },
+      "option": {},
+      "optspec": {
+        "allow": {
+          "method": "GET,PUT,POST,PATCH,DELETE,OPTIONS",
+          "op": "create,update,load,list,remove,command,direct,graphql"
+        },
+        "apikey": "",
+        "auth": {
+          "basic": false,
+          "in": "",
+          "name": "",
+          "prefix": ""
+        },
+        "base": "http://localhost:8000",
+        "clean": {
+          "keys": "key,token,id"
+        },
+        "entity": {
+          "`$CHILD`": {
+            "`$OPEN`": true,
+            "active": false,
+            "alias": {}
+          }
+        },
+        "extend": "`$ANY`",
+        "headers": {
+          "`$CHILD`": "`$STRING`"
+        },
+        "prefix": "",
+        "secret": "",
+        "server": {
+          "`$CHILD`": ""
+        },
+        "suffix": "",
+        "system": {
+          "fetch": "`$ANY`"
+        },
+        "test": {
+          "active": false,
+          "entity": {
+            "`$OPEN`": true
+          }
+        },
+        "utility": {}
+      },
+      "phase": {
+        "build": {
+          "active": true
+        },
+        "top": {
+          "active": true
+        }
+      },
+      "repo": {
+        "host": "github.com",
+        "path": ""
+      },
+      "target": {
+        "php": {
+          "active": true,
+          "author": {
+            "name": "",
+            "url": ""
+          },
+          "base": "node_modules/@voxgig/sdkgen/project/.sdk",
+          "comment": {
+            "line": "//"
+          },
+          "deps": {},
+          "ext": "php",
+          "feature": {
+            "fullset": [],
+            "trim": true
+          },
+          "module": {
+            "goversion": "",
+            "name": "searchapi-google",
+            "package": "",
+            "path": ""
+          },
+          "name": "php",
+          "origname": "",
+          "output": {
+            "adopt": false,
+            "create": true,
+            "path": "",
+            "repo": "",
+            "root": false,
+            "sdkrel": ""
+          },
+          "package": "@voxgig/sdkgen",
+          "provides": {
+            "schema": true,
+            "sekreto": true
+          },
+          "publish": {
+            "registry": {
+              "active": false,
+              "name": "packagist",
+              "package": "",
+              "state": "pending",
+              "url": "https://packagist.org",
+              "vault": {
+                "alias": "packagist",
+                "env": "PACKAGIST_API_TOKEN",
+                "recipe": ""
+              }
+            },
+            "tag": {
+              "active": true,
+              "prefix": "",
+              "vault": {
+                "alias": "github",
+                "recipe": "github"
+              },
+              "via": "port"
+            },
+            "version": "0.0.1"
+          },
+          "srcfeature": false,
+          "superseded": [
+            "test/StructRunner.php"
+          ],
+          "title": "PHP"
+        }
+      },
+      "test": {
+        "live": {
+          "app": false,
+          "base": "",
+          "strict": true
+        }
+      }
+    }
+  },
+  "name": "searchapi-google",
+  "origin": "voxgig-sdk"
+}

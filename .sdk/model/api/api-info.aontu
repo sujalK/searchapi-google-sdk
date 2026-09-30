@@ -1,0 +1,21 @@
+# API Information
+
+
+main: {
+  kit: {
+    info: {
+      auth: false
+      description: "Google Search API allows you to search the web with Google using various parameters to filter and customize the results."
+      servers: [
+        {
+          url: "https://www.searchapi.io/api/v1"
+        }
+      ]
+      summary: "Google Search API allows you to search the web with Google using various parameters to filter and customize the results."
+      title: "Google Search API"
+      version: "1.0.0"
+      website: "https://searchapi.io"
+    }
+  }
+}
+
